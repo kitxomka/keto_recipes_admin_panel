@@ -1,0 +1,12 @@
+.MuiDataGrid-columnHeaderTitle{
+    display: block; 
+    text-align:center; 
+    width: 100%; 
+}
+
+.MuiDataGrid-cell {
+    display: block;
+    position: relative;
+    text-align: center !important;
+}
+

@@ -1,33 +1,35 @@
 import * as React from 'react';
+import { Link } from "react-router-dom";
+import { ListItem, ListItemIcon, ListItemText, ListSubheader } from '@mui/material';
 import AssignmentOutlinedIcon from '@mui/icons-material/AssignmentOutlined';
 import BarChartOutlinedIcon from '@mui/icons-material/BarChartOutlined';
 import DashboardOutlinedIcon from '@mui/icons-material/DashboardOutlined';
 import RestaurantOutlinedIcon from '@mui/icons-material/RestaurantOutlined';
 import PeopleOutlinedIcon from '@mui/icons-material/PeopleOutlined';
-import { ListItem, ListItemIcon, ListItemText, ListSubheader } from '@mui/material';
 
+import './Dashboard.css';
 
 
 export const mainListItems = (
   <div>
-    <ListItem button>
+    <ListItem className='listItem' button component={Link} to="/dashboard" >
       <ListItemIcon>
         <DashboardOutlinedIcon />
       </ListItemIcon>
       <ListItemText primary="Dashboard" />
     </ListItem>
-    <ListItem button>
+    <ListItem className='listItem' button component={Link} to="/recipes-table" >
       <ListItemIcon>
         <RestaurantOutlinedIcon />
       </ListItemIcon>
       <ListItemText primary="Recipes" />
     </ListItem>
-    <ListItem button>
+    <ListItem className='listItem' button component={Link} to="/users-table" >
       <ListItemIcon>
         <PeopleOutlinedIcon />
       </ListItemIcon>
       <ListItemText primary="Users" />
-    </ListItem>
+    </ListItem> 
     <ListItem button>
       <ListItemIcon>
         <BarChartOutlinedIcon />

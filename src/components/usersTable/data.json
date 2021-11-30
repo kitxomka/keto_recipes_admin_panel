@@ -1,0 +1,72 @@
+[
+    {
+      "id": 1,
+      "name": "Jone Doe",
+      "email": "jon.dow@gmail.com",
+      "registrationDate": "20.11.2021",
+      "postedRecipes": 3
+    },
+    {
+        "id": 2,
+        "name": "Rose Willow",
+        "email": "rose.willow@gmail.com",
+        "registrationDate": "07.05.2021",
+        "postedRecipes": 15
+    },
+    {
+        "id": 3,
+        "name": "Celia James",
+        "email": "celia.james@gmail.com",
+        "registrationDate": "03.01.2021",
+        "postedRecipes": 5
+    },
+    {
+        "id": 4,
+        "name": "Roy Henson",
+        "email": "roy.henson@gmail.com",
+        "registrationDate": "11.09.2021",
+        "postedRecipes": 7
+    },
+    {
+        "id": 5,
+        "name": "Alexander Riley",
+        "email": "alex.riley@gmail.com",
+        "registrationDate": "17.02.2021",
+        "postedRecipes": 9
+    },
+    {
+        "id": 6,
+        "name": "Harry Gomez",
+        "email": "harry.gomez@gmail.com",
+        "registrationDate": "11.10.2021",
+        "postedRecipes": 6
+    },
+    {
+        "id": 7,
+        "name": "Ada Curry",
+        "email": "ada.curry@gmail.com",
+        "registrationDate": "30.06.2021",
+        "postedRecipes": 11
+    },
+    {
+        "id": 8,
+        "name": "Cody Mack",
+        "email": "cody.mack@gmail.com",
+        "registrationDate": "15.12.2020",
+        "postedRecipes": 1
+    },
+    {
+        "id": 9,
+        "name": "Mary Holt",
+        "email": "mary.holt@gmail.com",
+        "registrationDate": "03.05.2020",
+        "postedRecipes": 20
+    },
+    {
+        "id": 10,
+        "name": "Ola Hammond",
+        "email": "ola.hamm@gmail.com",
+        "registrationDate": "27.08.2021",
+        "postedRecipes": 5
+    }
+  ]
