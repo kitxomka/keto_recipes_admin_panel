@@ -1,19 +1,17 @@
 import axios from 'axios';
 import USER from './constants';
 
-
+const URL = 'http://localhost:4000';
 
 export const requestUsers = (data) => async (dispatch) => {
     dispatch({
         type: USER.LOAD,
     });
     try {
-        // const json  = await axios.get("data.json");
-        // console.log('response :', json.data);
+        const dbData  = await axios.get(URL + '/api/users');
         dispatch({
             type: USER.LOAD_SUCCESS,
-            // usersData: json.data,
-            usersData: data,
+            usersData: dbData.data,
             isError: false,
         });
     } catch (e) {
@@ -24,3 +22,6 @@ export const requestUsers = (data) => async (dispatch) => {
         });
     }
 };
+
+
+

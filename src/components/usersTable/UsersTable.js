@@ -2,7 +2,6 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from "react-redux";
 import { requestUsers }  from '../../redux/action';
 // import data from './data.json';
-import data from './data.json';
 import { Grid, Typography } from '@mui/material';
 import { DataGrid } from '@mui/x-data-grid';
 import './UsersTable.css';
@@ -11,7 +10,7 @@ import './UsersTable.css';
 const columns = [
     { field: 'name', headerName: 'Name', width: 250 },
     { field: 'email', headerName: 'Email', width: 250 },
-    { field: 'registrationDate', headerName: 'Registration Date', type: 'date', width: 250 },
+    { field: 'registration_date', headerName: 'Registration Date', type: 'date', width: 250 },
     { field: 'postedRecipes', headerName: 'Posted Recipes', type: 'number', width: 200 },
 ]
 
@@ -22,11 +21,12 @@ const UsersTable = () => {
     const dispatch = useDispatch();
 
     useEffect(() => {
-        dispatch(requestUsers(data));
+        dispatch(requestUsers(usersData));
     },[dispatch])
     
-    console.log('usersData', usersData)
-    const rows = usersData;
+    console.log('usersData', usersData.data)
+    const rows = usersData.data;
+
     return (
         <Grid container>
             <Grid item style={{ margin: '8rem auto 2rem auto' }}>
